@@ -1,4 +1,3 @@
-import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
 from sklearn.linear_model import LinearRegression
@@ -13,8 +12,6 @@ model = LinearRegression()
 model.fit(x,y)
 
 y_pred=model.predict(x)
-
-r=np.array(x.reshape(-1,1), dtype= 'float')
 
 x_pred=260
 y_pred1= model.predict([[x_pred]])
